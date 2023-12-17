@@ -18,4 +18,50 @@ export default function App() {
   );
 }
 
+// src/components/Dashboard.js
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+// import { BarChart } from 'react-d3-graph';
+
+// const Dashboard = () => {
+//   const [data, setData] = useState([]);
+
+//   useEffect(() => {
+//     axios.get('http://localhost:5000/api/data') // Adjust the API endpoint accordingly
+//       .then(response => {
+//         setData(response.data);
+//       })
+//       .catch(error => console.error('Error fetching data:', error));
+//   }, []);
+
+//   // Implement your D3.js chart here
+
+//   const chartConfig = {
+//     nodeHighlightBehavior: true,
+//     width: 800,
+//     height: 400,
+//     directed: true,
+//     node: {
+//       color: 'lightblue',
+//       size: 120,
+//       highlightStrokeColor: 'blue',
+//     },
+//     link: {
+//       highlightColor: 'lightblue',
+//     },
+//   };
+
+//   return (
+//     <div>
+//       <h1>Data Visualization Dashboard</h1>
+//       <BarChart
+//         id="graph-id" // id is mandatory, otherwise, it won't render
+//         data={yourData} // Replace with your actual data
+//         config={chartConfig}
+//       />
+//     </div>
+//   );
+// };
+
+// export default Dashboard;
 
